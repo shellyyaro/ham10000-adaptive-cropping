@@ -1,0 +1,7 @@
+configuration,display_name,AKIEC,BCC,BKL,DF,MEL,NV,VASC
+full_image,Full-image baseline,61.16,81.32,63.33,71.30,54.00,82.27,92.25
+fixed_crop,Fixed crop,55.05,79.38,74.70,79.13,67.48,84.52,92.96
+adaptive_baseline,Adaptive baseline,46.79,84.05,76.34,81.74,73.67,80.31,96.48
+adaptive_ungated_kl_common_aug,"Adaptive, ungated KL common augmentation",35.17,84.05,77.98,65.22,67.65,90.93,92.96
+adaptive_ungated_kl_mild_aug,"Adaptive, ungated KL mild augmentation",67.89,83.46,69.52,67.83,56.69,94.48,89.44
+adaptive_gated_kl_mild_aug,"Adaptive, gated KL mild augmentation (final model)",66.97,86.96,72.25,70.43,56.60,93.91,90.14

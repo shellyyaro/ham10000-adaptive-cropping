@@ -1,0 +1,100 @@
+{
+  "written_at": "2026-05-05 14:58:03",
+  "config": {
+    "model_type": "resnet",
+    "backbone": "resnet",
+    "arch": "resnet18",
+    "pretrained": true,
+    "use_meta": true,
+    "no_meta": false,
+    "img_size": 224,
+    "batch_size": 32,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "num_epochs": 50,
+    "patience": 7,
+    "img_emb_dim": 512,
+    "meta_hidden_dim": 128,
+    "use_meta_bn": true,
+    "clf_hidden_dim": 256,
+    "dropout": 0.3,
+    "stem_kernel_size": 7,
+    "stem_stride": 2,
+    "stem_use_maxpool": true,
+    "pool_type": "avg",
+    "gem_p": 3.0,
+    "gem_trainable": false,
+    "use_multiscale_stem": false,
+    "stem_branch_kernels": [
+      3,
+      3
+    ],
+    "stem_branch_dilations": [
+      1,
+      2
+    ],
+    "use_multiscale_block": false,
+    "multiscale_block_position": "none",
+    "multiscale_kernels": [
+      3,
+      3
+    ],
+    "multiscale_dilations": [
+      1,
+      2
+    ],
+    "use_midlevel_fusion": false,
+    "midlevel_source": "layer2",
+    "midlevel_pool_type": "avg",
+    "midlevel_emb_dim": 128,
+    "use_masked_image": false,
+    "use_hog_lbp": false,
+    "use_random_crop": true,
+    "random_crop_scale": [
+      0.7,
+      1.0
+    ],
+    "rotation_deg": 15.0,
+    "hflip": true,
+    "vflip": false,
+    "use_color_jitter": true,
+    "use_gaussian_blur": true,
+    "gaussian_blur_p": 0.3,
+    "gaussian_blur_sigma": [
+      0.1,
+      2.0
+    ],
+    "gaussian_blur_kernel": 23,
+    "agcwd_preset": "none",
+    "use_fused_masks": false,
+    "mask_mode": "none",
+    "mask_npz_train": null,
+    "mask_npz_val": null,
+    "mask_npz_test": null,
+    "loss_name": "ce",
+    "class_weighting": "inverse_freq",
+    "label_smoothing": 0.0,
+    "logit_adjustment": "none",
+    "tau": 1.0,
+    "sampler": "none",
+    "focal_gamma": 2.0,
+    "focal_alpha_mode": "none",
+    "use_lesion_consistency": false,
+    "consistency_weight": 0.0,
+    "consistency_feature_space": "embedding",
+    "consistency_loss_type": "mse",
+    "consistency_pair_sampler": false,
+    "return_features": false,
+    "return_lesion_id": false,
+    "debug_stop_after_model_build": false,
+    "run_tag": "Res18_META_CE_InverseFreq_GentleColor_PlusGaussianBlur"
+  },
+  "extras": {
+    "seed": 0,
+    "split_seed": 0,
+    "no_meta": false,
+    "target_class": "mel",
+    "early_stopping_metric": "balanced_acc",
+    "device": "cuda"
+  }
+}

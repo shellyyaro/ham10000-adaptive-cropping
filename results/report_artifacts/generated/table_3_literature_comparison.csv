@@ -1,0 +1,8 @@
+study,method,partitioning_protocol,accuracy_percent,balanced_accuracy_or_macro_recall_percent,macro_f1_percent,macro_auroc_percent
+Gulzar et al. [11],ScNet,Lesion-wise split; lesion-wise five-fold CV used during model selection,97.05,91.41,89.91,NR
+Jamaludin and Kim [12],ResNet50-based hybrid model,Verified lesion-level 80/10/10 split; five training seeds,78.41 ± 0.74,78.50,80.40,96.40
+Randhawa et al. [13],EfficientNet-B0 with uncertainty estimation,Lesion-level 70/15/15 split,NR,NR,73.08,94.04
+Zhang et al. [14],Mamba-DDPM-BSA,Image-level 70/10/20 split,NR,82.14,82.71,NR
+Attallah [15],SCaLiNG,Image-level 70/30 split,91.70,NR,91.70,NR
+Yadav et al. [16],DSCATNet,Five image-level folds; no lesion grouping reported,97.80,NR,92.98,99.12
+Present study,EfficientNet-B1 with adaptive lesion cropping metadata fusion and gated KL regularization,Five-fold lesion-disjoint cross-validation,85.83 ± 1.30,76.69 ± 2.37,75.87 ± 2.40,97.13 ± 0.40

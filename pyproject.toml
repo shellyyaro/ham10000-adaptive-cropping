@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ham10000-adaptive-cropping"
+version = "1.0.0"
+description = "Lesion-occupancy-controlled multi-view classification on HAM10000"
+requires-python = ">=3.10"
+dependencies = [
+  "torch==2.5.1",
+  "torchvision==0.20.1",
+  "numpy==1.24.3",
+  "pandas==2.3.3",
+  "scikit-learn==1.7.2",
+  "scipy==1.15.3",
+  "Pillow==11.1.0",
+  "matplotlib==3.10.8",
+  "openpyxl==3.1.5",
+  "opencv-python==4.8.1.78",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

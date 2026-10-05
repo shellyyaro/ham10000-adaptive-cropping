@@ -1,0 +1,100 @@
+{
+  "written_at": "2026-04-23 14:05:41",
+  "config": {
+    "arch": "resnet18",
+    "pretrained": true,
+    "img_size": 224,
+    "batch_size": 32,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "num_epochs": 50,
+    "patience": 7,
+    "img_emb_dim": 512,
+    "meta_hidden_dim": 128,
+    "use_meta_bn": true,
+    "clf_hidden_dim": 384,
+    "dropout": 0.3,
+    "stem_kernel_size": 7,
+    "stem_stride": 2,
+    "stem_use_maxpool": true,
+    "pool_type": "avg",
+    "gem_p": 3.0,
+    "gem_trainable": false,
+    "use_multiscale_stem": false,
+    "stem_branch_kernels": [
+      3,
+      3
+    ],
+    "stem_branch_dilations": [
+      1,
+      2
+    ],
+    "use_multiscale_block": true,
+    "multiscale_block_position": "after_layer1",
+    "multiscale_kernels": [
+      3,
+      3
+    ],
+    "multiscale_dilations": [
+      1,
+      2
+    ],
+    "use_midlevel_fusion": false,
+    "midlevel_source": "layer2",
+    "midlevel_pool_type": "avg",
+    "midlevel_emb_dim": 128,
+    "use_masked_image": false,
+    "use_hog_lbp": false,
+    "use_fused_masks": false,
+    "mask_mode": "none",
+    "mask_npz_train": null,
+    "mask_npz_val": null,
+    "mask_npz_test": null,
+    "loss_name": "ce",
+    "class_weighting": "inverse_freq",
+    "label_smoothing": 0.05,
+    "logit_adjustment": "none",
+    "tau": 1.0,
+    "sampler": "none",
+    "focal_gamma": 2.0,
+    "focal_alpha_mode": "none",
+    "hflip": true,
+    "vflip": false,
+    "rotation_deg": 15.0,
+    "use_color_jitter": true,
+    "color_jitter_brightness": 0.05,
+    "color_jitter_contrast": 0.05,
+    "color_jitter_saturation": 0.03,
+    "color_jitter_hue": 0.01,
+    "use_random_crop": true,
+    "random_crop_scale": [
+      0.7,
+      1.0
+    ],
+    "use_gaussian_blur": false,
+    "gaussian_blur_p": 0.3,
+    "gaussian_blur_sigma": [
+      0.1,
+      2.0
+    ],
+    "gaussian_blur_kernel": 23,
+    "agcwd_preset": "none",
+    "no_meta": false,
+    "run_tag": "Res18_META_CE_InverseFreq_GentleColor_Clf384_MSBlock_AfterLayer1_3x3_Dil2",
+    "use_lesion_consistency": false,
+    "consistency_weight": 0.0,
+    "consistency_feature_space": "embedding",
+    "consistency_loss_type": "mse",
+    "consistency_pair_sampler": false,
+    "return_features": false,
+    "return_lesion_id": false
+  },
+  "extras": {
+    "seed": 0,
+    "split_seed": 0,
+    "no_meta": false,
+    "target_class": "mel",
+    "early_stopping_metric": "balanced_acc",
+    "device": "cuda"
+  }
+}

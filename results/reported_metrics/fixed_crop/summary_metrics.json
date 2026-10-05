@@ -1,0 +1,11 @@
+{
+  "n_images": 10015,
+  "n_lesions": 7470,
+  "accuracy": 0.8037943085371942,
+  "balanced_accuracy": 0.7617286700091191,
+  "macro_f1": 0.6751674338757173,
+  "macro_roc_auc_ovr": 0.9195630502379007,
+  "micro_roc_auc_ovr": 0.9190843564907258,
+  "macro_average_precision": 0.7539059187707658,
+  "micro_average_precision": 0.7399046058510677
+}

@@ -1,0 +1,7 @@
+configuration,display_name,accuracy,balanced_accuracy,macro_f1,lesion_consistency,validation_balanced_accuracy
+full_image_efficientnet_baseline,Full image,76.30% ± 3.08%,72.29% ± 2.29%,60.31% ± 2.94%,84.84% ± 0.57%,74.93% ± 1.78%
+fixed_crop_viewce030_msecons005_baseline,Fixed crop,80.39% ± 2.86%,76.16% ± 3.13%,67.82% ± 3.92%,87.74% ± 1.27%,77.18% ± 3.82%
+adaptive_crop_viewce030_msecons005_baseline,Adaptive baseline,78.47% ± 3.77%,77.08% ± 2.63%,67.73% ± 4.34%,89.70% ± 0.97%,78.24% ± 2.57%
+adaptive_margin_softwrong_ungated_kl020,"Adaptive + alternative objective (ungated KL, common aug.)",84.48% ± 1.53%,73.50% ± 2.44%,73.47% ± 3.20%,91.80% ± 0.93%,74.41% ± 2.16%
+adaptive_ungated_kl_mild_aug,"Adaptive + alternative objective (ungated KL, mild aug.)",85.72% ± 1.78%,75.54% ± 2.71%,74.59% ± 2.82%,92.06% ± 1.21%,76.71% ± 1.64%
+adaptive_gated_kl_mild_aug,"Adaptive + alternative objective (gated KL, mild aug.)",85.83% ± 1.30%,76.69% ± 2.37%,75.87% ± 2.40%,91.99% ± 1.09%,76.95% ± 2.21%

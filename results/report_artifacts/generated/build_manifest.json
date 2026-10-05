@@ -1,0 +1,15 @@
+{
+  "outputs": [
+    "results\\report_artifacts\\generated\\table_1_five_fold_performance.csv",
+    "results\\report_artifacts\\generated\\table_2_pooled_class_recall.csv",
+    "results\\report_artifacts\\generated\\table_3_literature_comparison.csv",
+    "results\\report_artifacts\\generated\\figure_3_confusion_matrices.png"
+  ],
+  "canonical_report_media_sha256": {
+    "report_cover_logo.png": "03d676b4e286ff532bb31aa8f90783706869a6d75d6e555e71b12c1505cff411",
+    "figure_1_mask_area_distribution.png": "7d974a0e1ce5a86569a6c2884bea3d8a54a3e0e67934086e5d897179700d2ee6",
+    "figure_2_crop_examples.png": "3ce203e9a02f07780ee11d4c7cbbec81391e16f1a350fbfc3536f70110ff25d5",
+    "figure_3_confusion_matrices.png": "f5d9465ad3aece651e64aba9cb945bec39f075f721d6d649dea093329fc8b969"
+  },
+  "data_figures_rebuilt": false
+}
